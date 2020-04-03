@@ -1,0 +1,59 @@
+{
+  "name": "ido-technical-test",
+  "version": "1.0.0",
+  "description": "Technical test for IDO, this is a Auth API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest test/*.test.js",
+    "lint": "eslint --fix ."
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules"
+    ],
+    "nodeArgs": [
+      "--inspect=5821"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andreybejarano/ido-technical-test.git"
+  },
+  "keywords": [
+    "Technical",
+    "test",
+    "iDO",
+    "API",
+    "Node.js"
+  ],
+  "author": "Erik Andrey Bejarano Sanchez <andreybejarano@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreybejarano/ido-technical-test/issues"
+  },
+  "homepage": "https://github.com/andreybejarano/ido-technical-test#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jasmine": "^4.1.0",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "jest": "^25.2.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.2"
+  }
+}
